@@ -57,8 +57,8 @@ class Tests:
 					print('check node is {0}'.format(node[i][0]))
 					result = find_path(pgraph,s,node[i][0])
 					nodes, edges, costs, total_cost = result
-					if min_cost > result[3]:
-						min_cost = result[3]
+					if min_cost > total_cost:
+						min_cost = total_cost
 						clone = node[i][0]
 						clone_number = i
 						#  node[i].remove(0)
