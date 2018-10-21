@@ -36,7 +36,7 @@ class Tests:
 		con.close()
 		return graph
 
-	def find_short_path(self,pgraph,s,d,node_list):
+	def find_short_path(self,pgraph,s,node_list):
 		path =[]
 		node=[]
 		min_cost = 10	
