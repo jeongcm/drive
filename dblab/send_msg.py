@@ -4,12 +4,8 @@ import sys
 
 if __name__ == '__main__':
 
-	if len(sys.argv) < 2:
-		print('send msg not have ip')
-		sys.exit()
 	
-	Ip = sys.argv[1]
-	serverIp = sys.argv[2]
+	serverIp = sys.argv[1]
 	message = 'hihi'
 
 	sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
